@@ -603,6 +603,38 @@
 				stackButton: 'Stack',
 				liveNoteSiav: 'Nota: O carregamento inicial pode levar 40s (instância gratuita).',
 				liveNoteBi: 'Nota: Servidor em repouso. Clique para acordar (Wake up) e<br />aguarde o carregamento inicial.',
+				stackArticles: {
+					siav: {
+						title: 'Stack | SIAV',
+						content: [
+							'<section class="stack-doc-section"><h3>1. Visão Geral</h3><p>O SIAV é uma solução de auditoria de dados em larga escala que integra técnicas de Data Engineering com IA Generativa. O sistema automatiza a identificação de anomalias em gastos públicos, processando milhões de registros de viagens com foco em performance e precisão semântica.</p></section>',
+							'<section class="stack-doc-section"><h3>2. Arquitetura do Software (Clean Architecture)</h3><p>O projeto segue princípios de Domain-Driven Design (DDD) para garantir manutenibilidade e separação de interesses:</p><ul class="stack-doc-list"><li><strong>app/core:</strong> Gestão de configurações globais, logging estruturado e ciclo de vida da aplicação (startup/settings).</li><li><strong>app/domain:</strong> Contém a lógica de negócio central (audit.py), independente de frameworks ou ferramentas externas.</li><li><strong>app/infrastructure:</strong> Camada de baixo nível que gerencia o motor de dados (data_engine.py), integrações com LLM (groq_client.py) e geração de vetores (embedding.py).</li><li><strong>app/services:</strong> Orquestra a comunicação entre a infraestrutura e o domínio, realizando o processamento das auditorias.</li><li><strong>app/routers &amp; app/schemas:</strong> API baseada em contratos rigorosos para comunicação com o frontend e validação de dados.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>3. Stack Tecnológica &amp; Engenharia de Dados</h3><ul class="stack-doc-list"><li><strong>Linguagem Core:</strong> Python 3.13 (foco em performance e concorrência).</li><li><strong>Data Engine:</strong> Processamento vetorial e tratamento de datasets massivos (+1M registros).</li><li><strong>IA e RAG:</strong> Embeddings para busca de similaridade e detecção de padrões não óbvios; LLMs via Groq para análise qualitativa de justificativas de viagem com ultra-baixa latência.</li><li><strong>Frontend Reativo:</strong> SPA (Single Page Application) em Vanilla JS com arquitetura de estado inspirada em Redux (store/reducer), garantindo fluidez no dashboard.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>4. Diferenciais de Implementação</h3><ul class="stack-doc-list"><li><strong>Lazy Evaluation:</strong> Otimização de memória no tratamento de dados para evitar gargalos em hardware limitado.</li><li><strong>Segurança e Logs:</strong> Middleware de auditoria para rastreabilidade de todas as ações realizadas no sistema.</li><li><strong>Modularidade:</strong> Substituição facilitada de componentes de infraestrutura sem afetar a lógica de negócio.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>5. Estrutura de Diretórios</h3><pre class="stack-doc-tree"><code>├── app/                # BACKEND (Python 3.13)\n│   ├── core/           # Configurações, Middlewares e Startup\n│   ├── domain/         # Lógica de Negócio e Regras de Auditoria\n│   ├── infrastructure/ # Data Engine, Embeddings e Groq (LLM)\n│   ├── services/       # Orquestração e Regras de Serviço\n│   └── routers/        # Definição de Rotas e Endpoints API\n│\n└── static/             # FRONTEND (Vanilla JS SPA)\n    ├── store/          # Gerenciamento de Estado (Store, Reducer, Actions)\n    ├── controllers/    # Lógica de Interação (Event Listeners e Fluxo)\n    ├── ui/             # Renderização de Componentes Dinâmicos\n    ├── services/       # Cliente de Consumo da API (Fetch/Axios)\n    └── domain/         # Definições de Modelos e Entidades do Front</code></pre></section>'
+						].join('')
+					},
+					bi: {
+						title: 'Stack | BI',
+						content: [
+							'<section class="stack-doc-section"><h3>1. Visão Geral</h3><p>Dashboard analítico de alta performance desenvolvido para converter dados abertos governamentais em inteligência estratégica. O foco está na visualização de tendências, análise de órgãos e perfil de viajantes para otimização de recursos.</p></section>',
+							'<section class="stack-doc-section"><h3>2. Arquitetura da Solução</h3><p>O sistema foi construído com foco em modularidade e velocidade de resposta:</p><ul class="stack-doc-list"><li><strong>main_app.py:</strong> Ponto de entrada e orquestração do layout principal.</li><li><strong>pages/:</strong> Estrutura de navegação multi-página, separando contextos de Auditoria, Análise de Órgãos e Perfil de Viajantes.</li><li><strong>src/ (Engine):</strong></li><li><strong>connector.py:</strong> Abstração da camada de dados, garantindo conectividade eficiente com os datasets de viagens.</li><li><strong>discovery.py &amp; profiling.py:</strong> Algoritmos de descoberta de dados e análise estatística para geração automática de perfis de gastos.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>3. Stack Tecnológica &amp; Engenharia</h3><ul class="stack-doc-list"><li><strong>Frontend/App Framework:</strong> Python (Streamlit) para entrega de interfaces interativas e responsivas.</li><li><strong>Data Processing:</strong> Utilização de bibliotecas de alto desempenho (como Polars ou Pandas) para processamento em memória de grandes volumes de dados abertos.</li><li><strong>UI/UX:</strong> Componentização customizada (ui.py) para manter a identidade visual e facilitar a manutenção dos elementos gráficos.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>4. Diferenciais Técnicos</h3><ul class="stack-doc-list"><li><strong>Multi-Page Architecture:</strong> Organização lógica que permite análises profundas sem sobrecarregar a interface do usuário.</li><li><strong>Data Discovery:</strong> Processo automatizado de identificação de padrões e outliers diretamente na ingestão dos dados.</li><li><strong>Performance:</strong> Cache de dados e otimização de consultas para garantir transições fluidas entre os dashboards.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>5. Estrutura de Diretórios</h3><pre class="stack-doc-tree"><code>├── main_app.py         # Orquestrador do App\n├── pages/              # Módulos de Visões Estratégicas\n├── src/\n│   ├── connector.py    # Camada de Acesso aos Dados\n│   ├── discovery.py    # Lógica de Mineração de Insights\n│   └── profiling.py    # Estatísticas e Perfilamento\n└── data/               # Armazenamento de Datasets (Dados Abertos)</code></pre></section>'
+						].join('')
+					},
+					data: {
+						title: 'Stack | Data Engine',
+						content: [
+							'<section class="stack-doc-section"><h3>1. Visão Geral</h3><p>Motor de ETL e processamento de dados projetado para suportar o ecossistema GOVBR. O engine gerencia desde a ingestão de dados brutos até a criação de cubos analíticos e vetorização para IA, utilizando uma arquitetura escalável e resiliente.</p></section>',
+							'<section class="stack-doc-section"><h3>2. Arquitetura de Dados (Medallion &amp; Pipelines)</h3><p>O processamento é dividido em camadas lógicas para garantir a qualidade do dado:</p><ul class="stack-doc-list"><li><strong>Camada Bronze (csv_to_parquet.py):</strong> Ingestão e conversão de formatos brutos para Parquet (otimização de storage e leitura).</li><li><strong>Camada Silver (silver/):</strong> Limpeza, padronização de colunas e enriquecimento. Inclui tratamento de passagens, trechos e pagamentos.</li><li><strong>Camada Gold (gold/):</strong> Dados agregados e prontos para consumo, seguindo regras de negócio para auditoria e BI.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>3. Módulos de Inteligência e Auditoria</h3><p>O grande diferencial desta engine é a preparação de dados para IA:</p><ul class="stack-doc-list"><li><strong>Módulo RAG (audit/rag/):</strong> Pipeline de extração de features, geração de vetores e treinamento de IA para identificação de anomalias semânticas.</li><li><strong>Cubo de Auditoria (audit/bi/):</strong> Geração de agregados complexos (Rankings, KPIs e Detalhe de Alvos) para alimentar dashboards de alta performance.</li><li><strong>Supabase Integration:</strong> Sincronização automatizada de vetores e metadados com o Supabase (Vector Store).</li></ul></section>',
+							'<section class="stack-doc-section"><h3>4. Stack Tecnológica</h3><ul class="stack-doc-list"><li><strong>Linguagem Core:</strong> Python 3.13.</li><li><strong>Performance:</strong> Processamento otimizado com foco em Lazy Evaluation e paralelismo (Rust/Polars via pipelines).</li><li><strong>Cloud &amp; Storage:</strong> Sincronização via Google Drive API (shared/drive_client.py) e exportação para Parquet.</li><li><strong>Qualidade:</strong> Contratos de schema rigorosos (check_gold_schema_contract.py) e logs detalhados de cada etapa do processo.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>5. Estrutura de Diretórios</h3><pre class="stack-doc-tree"><code>├── src/govbr_etl/\n│   ├── core/           # Camadas Medallion (Bronze, Silver, Gold)\n│   ├── modules/\n│   │   ├── audit/      # RAG, BI (Cubos) e IA Training\n│   │   └── pipeline/   # Padronização e Limpeza\n│   ├── shared/         # Clientes de API (Drive, Supabase) e Utils\n│   └── tools/          # Validação de Contratos de Dados e Amostragem\n├── logs/               # Rastreabilidade total do pipeline\n└── temp/               # Landing Zone organizada por Ano/Camada</code></pre></section>'
+						].join('')
+					}
+				},
 				stackModal: {
 					title: 'Documentação Técnica: SIAV (Sistema Inteligente de Auditoria de Viagens)',
 					sections: [
@@ -740,6 +772,38 @@
 				stackButton: 'Stack',
 				liveNoteSiav: 'Note: Initial loading may take 40s (free instance).',
 				liveNoteBi: 'Note: Server is sleeping. Click to wake it up and<br />wait for the initial load.',
+				stackArticles: {
+					siav: {
+						title: 'Stack | SIAV',
+						content: [
+							'<section class="stack-doc-section"><h3>1. Overview</h3><p>SIAV is a large-scale data auditing solution that combines Data Engineering techniques with Generative AI. The system automates anomaly detection in public spending by processing millions of travel records with a focus on performance and semantic precision.</p></section>',
+							'<section class="stack-doc-section"><h3>2. Software Architecture (Clean Architecture)</h3><p>The project follows Domain-Driven Design (DDD) principles to ensure maintainability and separation of concerns:</p><ul class="stack-doc-list"><li><strong>app/core:</strong> Global configuration management, structured logging, and application lifecycle (startup/settings).</li><li><strong>app/domain:</strong> Contains the core business logic (audit.py), independent from frameworks or external tools.</li><li><strong>app/infrastructure:</strong> Low-level layer responsible for the data engine (data_engine.py), LLM integrations (groq_client.py), and vector generation (embedding.py).</li><li><strong>app/services:</strong> Orchestrates communication between infrastructure and domain, executing audit processing.</li><li><strong>app/routers &amp; app/schemas:</strong> Contract-driven API layer for frontend communication and data validation.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>3. Technology Stack &amp; Data Engineering</h3><ul class="stack-doc-list"><li><strong>Core Language:</strong> Python 3.13 (focused on performance and concurrency).</li><li><strong>Data Engine:</strong> Vectorized processing and handling of massive datasets (1M+ records).</li><li><strong>AI and RAG:</strong> Embeddings for similarity search and non-obvious pattern detection; Groq-hosted LLMs for ultra-low-latency qualitative analysis of travel justifications.</li><li><strong>Reactive Frontend:</strong> Vanilla JS SPA with a Redux-inspired state architecture (store/reducer), ensuring dashboard fluidity.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>4. Implementation Highlights</h3><ul class="stack-doc-list"><li><strong>Lazy Evaluation:</strong> Memory optimization during data processing to avoid bottlenecks on limited hardware.</li><li><strong>Security and Logs:</strong> Audit middleware for traceability of all actions performed in the system.</li><li><strong>Modularity:</strong> Easy replacement of infrastructure components without affecting business logic.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>5. Directory Structure</h3><pre class="stack-doc-tree"><code>├── app/                # BACKEND (Python 3.13)\n│   ├── core/           # Settings, Middlewares and Startup\n│   ├── domain/         # Business Logic and Audit Rules\n│   ├── infrastructure/ # Data Engine, Embeddings and Groq (LLM)\n│   ├── services/       # Orchestration and Service Rules\n│   └── routers/        # Route Definitions and API Endpoints\n│\n└── static/             # FRONTEND (Vanilla JS SPA)\n    ├── store/          # State Management (Store, Reducer, Actions)\n    ├── controllers/    # Interaction Logic (Event Listeners and Flow)\n    ├── ui/             # Dynamic Component Rendering\n    ├── services/       # API Client Layer (Fetch/Axios)\n    └── domain/         # Frontend Models and Entities</code></pre></section>'
+						].join('')
+					},
+					bi: {
+						title: 'Stack | BI',
+						content: [
+							'<section class="stack-doc-section"><h3>1. Overview</h3><p>High-performance analytical dashboard built to convert open government data into strategic intelligence. The focus is on trend visualization, agency analysis, and traveler profiling to optimize resource allocation.</p></section>',
+							'<section class="stack-doc-section"><h3>2. Solution Architecture</h3><p>The system was built with modularity and fast response in mind:</p><ul class="stack-doc-list"><li><strong>main_app.py:</strong> Entry point and orchestration of the main layout.</li><li><strong>pages/:</strong> Multi-page navigation structure separating Audit, Agency Analysis, and Traveler Profile contexts.</li><li><strong>src/ (Engine):</strong></li><li><strong>connector.py:</strong> Data access abstraction layer, ensuring efficient connectivity with travel datasets.</li><li><strong>discovery.py &amp; profiling.py:</strong> Data discovery and statistical analysis algorithms for automatic spending profile generation.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>3. Technology Stack &amp; Engineering</h3><ul class="stack-doc-list"><li><strong>Frontend/App Framework:</strong> Python (Streamlit) for delivering interactive and responsive interfaces.</li><li><strong>Data Processing:</strong> High-performance libraries (such as Polars or Pandas) for in-memory processing of large volumes of open data.</li><li><strong>UI/UX:</strong> Custom componentization (ui.py) to preserve visual identity and simplify maintenance of graphical elements.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>4. Technical Highlights</h3><ul class="stack-doc-list"><li><strong>Multi-Page Architecture:</strong> Logical organization that enables deep analysis without overloading the user interface.</li><li><strong>Data Discovery:</strong> Automated process for identifying patterns and outliers directly during data ingestion.</li><li><strong>Performance:</strong> Data caching and query optimization to ensure smooth transitions between dashboards.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>5. Directory Structure</h3><pre class="stack-doc-tree"><code>├── main_app.py         # App Orchestrator\n├── pages/              # Strategic View Modules\n├── src/\n│   ├── connector.py    # Data Access Layer\n│   ├── discovery.py    # Insight Mining Logic\n│   └── profiling.py    # Statistics and Profiling\n└── data/               # Dataset Storage (Open Data)</code></pre></section>'
+						].join('')
+					},
+					data: {
+						title: 'Stack | Data Engine',
+						content: [
+							'<section class="stack-doc-section"><h3>1. Overview</h3><p>ETL and data processing engine designed to support the GOVBR ecosystem. It handles everything from raw data ingestion to analytical cube generation and AI vectorization using a scalable and resilient architecture.</p></section>',
+							'<section class="stack-doc-section"><h3>2. Data Architecture (Medallion &amp; Pipelines)</h3><p>Processing is divided into logical layers to guarantee data quality:</p><ul class="stack-doc-list"><li><strong>Bronze Layer (csv_to_parquet.py):</strong> Ingestion and conversion of raw formats into Parquet (storage and read optimization).</li><li><strong>Silver Layer (silver/):</strong> Cleaning, column standardization, and enrichment. Includes fare, route, and payment handling.</li><li><strong>Gold Layer (gold/):</strong> Aggregated, consumption-ready data following business rules for audit and BI.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>3. Intelligence and Audit Modules</h3><p>This engine stands out by preparing data for AI workflows:</p><ul class="stack-doc-list"><li><strong>RAG Module (audit/rag/):</strong> Feature extraction, vector generation, and AI training pipeline for semantic anomaly detection.</li><li><strong>Audit Cube (audit/bi/):</strong> Generation of complex aggregates (rankings, KPIs, and target detail) to power high-performance dashboards.</li><li><strong>Supabase Integration:</strong> Automated synchronization of vectors and metadata with Supabase (Vector Store).</li></ul></section>',
+							'<section class="stack-doc-section"><h3>4. Technology Stack</h3><ul class="stack-doc-list"><li><strong>Core Language:</strong> Python 3.13.</li><li><strong>Performance:</strong> Optimized processing focused on lazy evaluation and parallelism (Rust/Polars via pipelines).</li><li><strong>Cloud &amp; Storage:</strong> Synchronization through Google Drive API (shared/drive_client.py) and Parquet export.</li><li><strong>Quality:</strong> Strict schema contracts (check_gold_schema_contract.py) and detailed logs for every pipeline stage.</li></ul></section>',
+							'<section class="stack-doc-section"><h3>5. Directory Structure</h3><pre class="stack-doc-tree"><code>├── src/govbr_etl/\n│   ├── core/           # Medallion Layers (Bronze, Silver, Gold)\n│   ├── modules/\n│   │   ├── audit/      # RAG, BI (Cubes) and AI Training\n│   │   └── pipeline/   # Standardization and Cleaning\n│   ├── shared/         # API Clients (Drive, Supabase) and Utils\n│   └── tools/          # Data Contract Validation and Sampling\n├── logs/               # Full Pipeline Traceability\n└── temp/               # Landing Zone Organized by Year/Layer</code></pre></section>'
+						].join('')
+					}
+				},
 				stackModal: {
 					title: 'Technical Documentation: SIAV (Smart Travel Auditing System)',
 					sections: [
@@ -812,6 +876,26 @@
 		};
 
 		var fadeTimeoutId = null;
+
+		var renderStackArticles = function (lang) {
+			var t = translations[lang] || translations.pt;
+			var articles = t.stackArticles || {};
+
+			if (articles.siav) {
+				$('#siav-stack h2.major').text(articles.siav.title);
+				$('#siav-stack .stack-doc').html(articles.siav.content);
+			}
+
+			if (articles.bi) {
+				$('#bi-stack h2.major').text(articles.bi.title);
+				$('#bi-stack .stack-doc').html(articles.bi.content);
+			}
+
+			if (articles.data) {
+				$('#data-stack h2.major').text(articles.data.title);
+				$('#data-stack .stack-doc').html(articles.data.content);
+			}
+		};
 
 		var configureProjectLinks = function (lang) {
 			var t = translations[lang] || translations.pt;
@@ -887,6 +971,7 @@
 			$('#nav-about').text(t.navAbout);
 			$('#nav-contact').text(t.navContact);
 			$('#intro-title').text(t.introTitle);
+			renderStackArticles(lang);
 
 			$projectsCarousel.attr('aria-label', t.carouselLabel);
 			$projectsCarousel.find('.carousel-btn.prev').attr('aria-label', t.carouselPrev);
