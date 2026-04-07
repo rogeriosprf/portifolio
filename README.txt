@@ -1,30 +1,39 @@
-Dimension by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Rogério Oliveira | Engenharia de Dados & Sistemas de Alta Performance
 
+Este repositório contém o código-fonte do meu portfólio profissional, desenvolvido para apresentar soluções práticas em Engenharia de Dados, Backend e IA Generativa.
+🚀 Destaques Técnicos
 
-This is Dimension, a fun little one-pager with modal-ized (is that a word?) "pages"
-and a cool depth effect (click on a menu item to see what I mean). Simple, fully
-responsive, and kitted out with all the usual pre-styled elements you'd expect.
-Hope you dig it :)
+O portfólio foca em três ecossistemas principais que desenvolvi:
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+    SIAV (Sistema Inteligente de Auditoria de Viagens): Plataforma de auditoria em larga escala utilizando Python 3.13, processamento vetorial e RAG para detecção de anomalias em gastos públicos.
 
-(* = not included)
+    BI de Viagens GOVBR: Painel analítico dinâmico construído em Streamlit, focado em transformar dados abertos governamentais em inteligência estratégica.
 
-AJ
-aj@lkn.io | @ajlkn
+    Data Engine: Motor de ETL de ultra performance utilizando Rust e Polars (Lazy Evaluation), garantindo eficiência extrema no processamento de grandes volumes de dados.
 
+🛠️ Minha Stack
 
-Credits:
+    Dados: SQL (10+ anos), Polars, PySpark, PostgreSQL, Azure, Supabase.
 
-	Demo Images:
-		Unsplash (unsplash.com)
+    Linguagens: Python, Rust, SQL, JavaScript (Vanilla).
 
-	Icons:
-		Font Awesome (fontawesome.io)
+    IA Aplicada: RAG (Retrieval-Augmented Generation), Prompt Engineering, Integração com LLMs (Groq/OpenAI).
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+    Infra: Linux (Arch/Ubuntu), Docker, GitHub Actions.
+
+🌐 Acesse o Portfólio
+
+O site está disponível em: rogeriosprf.github.io/portifolio/
+⚖️ Créditos e Licença
+
+Este projeto utiliza o template Dimension da HTML5 UP.
+
+    Design Original: HTML5 UP (@ajlkn)
+
+    Licença: Creative Commons Attribution 3.0 (CCA 3.0)
+
+    Ícones: Font Awesome
+
+    Imagens: Unsplash (Imagens CC0)
+
+    Bibliotecas: jQuery, Responsive Tools.
