@@ -1,0 +1,736 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="pt-BR">
+
+<head>
+	<title>Rogério Oliveira | Engenharia de Dados & Sistemas de Alta Escala</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<div class="language-switcher" role="group" aria-label="Idioma / Language">
+		<button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true">PT</button>
+		<button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+	</div>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon solid fa-cog"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1 id="hero-title">Arquitetura de Dados e Sistemas de Alta Performance<br /></h1>
+					<p id="hero-subtitle">Desenvolvimento de pipelines escaláveis, backends robustos e soluções de IA
+						focadas em eficiência operacional e decisões baseadas em dados.</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a id="nav-intro" href="#intro">Projetos</a></li>
+					<li><a id="nav-work" href="#work">Stack</a></li>
+					<li><a id="nav-about" href="#about">Soluções</a></li>
+					<li><a id="nav-contact" href="#contact">Contato</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 id="intro-title" class="major">Projetos</h2>
+				<div class="projects-carousel" aria-label="Carrossel de projetos">
+					<button class="carousel-btn prev" type="button" aria-label="Projeto anterior">&#10094;</button>
+					<div class="carousel-viewport">
+						<div class="carousel-track">
+							<div class="carousel-slide is-active">
+								<section class="project-card project-card-featured">
+									<h3 class="project-title-with-badge"><span class="project-title-badge icon solid fa-shield-alt" aria-hidden="true"></span><span class="project-title-text">SIAV | Sistema Inteligente de Auditoria de Viagens</span></h3>
+									<div class="project-details">
+										<p class="project-description">Plataforma inteligente para auditoria de gastos públicos baseada em IA e processamento de alto desempenho.</p>
+										<p><strong class="project-challenge-label">O Desafio:</strong> <span
+												class="project-challenge-text">Identificar anomalias em milhões de registros de viagens governamentais, superando a escala da análise manual humana.</span></p>
+										<p><strong class="project-solution-label">A Solução:</strong> <span
+												class="project-solution-text">Arquitetura robusta para +1M de registros integrada a LLMs e Embeddings para detecção semântica de padrões suspeitos e dashboards reativos.</span></p>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button small project-demo-btn"
+												data-demo="auditoria">Demo</a></li>
+										<li><a href="#siav-stack" class="button small project-stack-btn">Stack</a></li>
+										<li><a href="#" class="button small">GitHub</a></li>
+										<li><a href="#" class="button small">Case</a></li>
+										<li class="project-live-note">Nota: Servidor em repouso. Clique para acordar (Wake up) e<br />aguarde o carregamento inicial.</li>
+									</ul>
+								</section>
+							</div>
+							<div class="carousel-slide">
+								<section class="project-card project-card-structured">
+									<h3 class="project-title-with-badge"><span class="project-title-badge icon solid fa-chart-bar" aria-hidden="true"></span><span class="project-title-text">BI de Viagens GOVBR | Visibilidade Estratégica de Gastos</span></h3>
+									<div class="project-details">
+										<p class="project-description">Transformação de dados abertos governamentais em inteligência estratégica para gestão de recursos públicos.</p>
+										<p><strong class="project-challenge-label">O Desafio:</strong> <span
+												class="project-challenge-text">Consolidar e limpar bases complexas de dados abertos para permitir que gestores visualizem a destinação real dos recursos de forma clara.</span></p>
+										<p><strong class="project-solution-label">A Solução:</strong> <span
+												class="project-solution-text">Painel analítico dinâmico com dashboards de alta performance que revelam tendências de gastos e custos excessivos em tempo real.</span></p>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button small project-demo-btn" data-demo="bi">Demo</a>
+										</li>
+										<li><a href="#bi-stack" class="button small project-stack-btn">Stack</a></li>
+										<li><a href="https://github.com/rogeriosprf/GOVBR-Viagens-BI"
+												class="button small" target="_blank" rel="noopener">GitHub</a></li>
+										<li><a href="https://govbr-viagens-bi-dnhntcgnzbsvbare9zbtbj.streamlit.app/"
+												class="button small" target="_blank" rel="noopener">Live</a></li>
+										<li class="project-live-note">Nota: O carregamento inicial pode levar 40s (instância gratuita).</li>
+									</ul>
+								</section>
+							</div>
+							<div class="carousel-slide">
+								<section class="project-card project-card-structured">
+									<h3 class="project-title-with-badge"><span class="project-title-badge icon solid fa-microchip" aria-hidden="true"></span><span class="project-title-text">Data Engine | Processamento de Ultra Performance</span></h3>
+									<div class="project-details">
+										<p class="project-description">Motor de ETL customizado para processamento massivo de dados com eficiência extrema de hardware.</p>
+										<p><strong class="project-challenge-label">O Desafio:</strong> <span
+												class="project-challenge-text">Superar gargalos de memória e latência de ferramentas convencionais ao lidar com grandes volumes de dados (Big Data).</span></p>
+										<p><strong class="project-solution-label">A Solução:</strong> <span
+												class="project-solution-text">Engine desenvolvida em Rust e Polars, utilizando Lazy Evaluation e paralelismo para garantir processamento veloz com baixíssimo consumo de recursos.</span></p>
+									</div>
+									<ul class="actions">
+										<li><a href="#" class="button small project-demo-btn" data-demo="data">Demo</a>
+										</li>
+										<li><a href="#data-stack" class="button small project-stack-btn">Stack</a></li>
+										<li><a href="https://github.com/rogeriosprf/GOVBR-Data-Engine"
+												class="button small" target="_blank" rel="noopener">GitHub</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-btn next" type="button" aria-label="Próximo projeto">&#10095;</button>
+					<div class="carousel-dots" role="tablist" aria-label="Selecionar projeto">
+						<button class="carousel-dot is-active" type="button" aria-label="Projeto 1"></button>
+						<button class="carousel-dot" type="button" aria-label="Projeto 2"></button>
+						<button class="carousel-dot" type="button" aria-label="Projeto 3"></button>
+					</div>
+				</div>
+			</article>
+
+			<article id="siav-stack">
+				<h2 class="major">Stack | SIAV</h2>
+				<div class="stack-doc">
+					<section class="stack-doc-section">
+						<h3>1. Visão Geral</h3>
+						<p>O SIAV é uma solução de auditoria de dados em larga escala que integra técnicas de Data Engineering com IA Generativa. O sistema automatiza a identificação de anomalias em gastos públicos, processando milhões de registros de viagens com foco em performance e precisão semântica.</p>
+					</section>
+					<section class="stack-doc-section">
+						<h3>2. Arquitetura do Software (Clean Architecture)</h3>
+						<p>O projeto segue princípios de Domain-Driven Design (DDD) para garantir manutenibilidade e separação de interesses:</p>
+						<ul class="stack-doc-list">
+							<li><strong>app/core:</strong> Gestão de configurações globais, logging estruturado e ciclo de vida da aplicação (startup/settings).</li>
+							<li><strong>app/domain:</strong> Contém a lógica de negócio central (audit.py), independente de frameworks ou ferramentas externas.</li>
+							<li><strong>app/infrastructure:</strong> Camada de baixo nível que gerencia o motor de dados (data_engine.py), integrações com LLM (groq_client.py) e geração de vetores (embedding.py).</li>
+							<li><strong>app/services:</strong> Orquestra a comunicação entre a infraestrutura e o domínio, realizando o processamento das auditorias.</li>
+							<li><strong>app/routers &amp; app/schemas:</strong> API baseada em contratos rigorosos para comunicação com o frontend e validação de dados.</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>3. Stack Tecnológica &amp; Engenharia de Dados</h3>
+						<ul class="stack-doc-list">
+							<li><strong>Linguagem Core:</strong> Python 3.13 (foco em performance e concorrência).</li>
+							<li><strong>Data Engine:</strong> Processamento vetorial e tratamento de datasets massivos (+1M registros).</li>
+							<li><strong>IA e RAG:</strong> Embeddings para busca de similaridade e detecção de padrões não óbvios; LLMs via Groq para análise qualitativa de justificativas de viagem com ultra-baixa latência.</li>
+							<li><strong>Frontend Reativo:</strong> SPA (Single Page Application) em Vanilla JS com arquitetura de estado inspirada em Redux (store/reducer), garantindo fluidez no dashboard.</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>4. Diferenciais de Implementação</h3>
+						<ul class="stack-doc-list">
+							<li><strong>Lazy Evaluation:</strong> Otimização de memória no tratamento de dados para evitar gargalos em hardware limitado.</li>
+							<li><strong>Segurança e Logs:</strong> Middleware de auditoria para rastreabilidade de todas as ações realizadas no sistema.</li>
+							<li><strong>Modularidade:</strong> Substituição facilitada de componentes de infraestrutura sem afetar a lógica de negócio.</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>5. Estrutura de Diretórios</h3>
+						<pre class="stack-doc-tree"><code>├── app/                # BACKEND (Python 3.13)
+│   ├── core/           # Configurações, Middlewares e Startup
+│   ├── domain/         # Lógica de Negócio e Regras de Auditoria
+│   ├── infrastructure/ # Data Engine, Embeddings e Groq (LLM)
+│   ├── services/       # Orquestração e Regras de Serviço
+│   └── routers/        # Definição de Rotas e Endpoints API
+│
+└── static/             # FRONTEND (Vanilla JS SPA)
+    ├── store/          # Gerenciamento de Estado (Store, Reducer, Actions)
+    ├── controllers/    # Lógica de Interação (Event Listeners e Fluxo)
+    ├── ui/             # Renderização de Componentes Dinâmicos
+    ├── services/       # Cliente de Consumo da API (Fetch/Axios)
+    └── domain/         # Definições de Modelos e Entidades do Front</code></pre>
+					</section>
+				</div>
+			</article>
+
+			<article id="bi-stack">
+				<h2 class="major">Stack | BI</h2>
+				<div class="stack-doc">
+					<section class="stack-doc-section">
+						<h3>1. Visão Geral</h3>
+						<p>Dashboard analítico de alta performance desenvolvido para converter dados abertos governamentais em inteligência estratégica. O foco está na visualização de tendências, análise de órgãos e perfil de viajantes para otimização de recursos.</p>
+					</section>
+					<section class="stack-doc-section">
+						<h3>2. Arquitetura da Solução</h3>
+						<p>O sistema foi construído com foco em modularidade e velocidade de resposta:</p>
+						<ul class="stack-doc-list">
+							<li><strong>main_app.py:</strong> Ponto de entrada e orquestração do layout principal.</li>
+							<li><strong>pages/:</strong> Estrutura de navegação multi-página, separando contextos de Auditoria, Análise de Órgãos e Perfil de Viajantes.</li>
+							<li><strong>src/ (Engine):</strong></li>
+							<li><strong>connector.py:</strong> Abstração da camada de dados, garantindo conectividade eficiente com os datasets de viagens.</li>
+							<li><strong>discovery.py &amp; profiling.py:</strong> Algoritmos de descoberta de dados e análise estatística para geração automática de perfis de gastos.</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>3. Stack Tecnológica &amp; Engenharia</h3>
+						<ul class="stack-doc-list">
+							<li><strong>Frontend/App Framework:</strong> Python (Streamlit) para entrega de interfaces interativas e responsivas.</li>
+							<li><strong>Data Processing:</strong> Utilização de bibliotecas de alto desempenho (como Polars ou Pandas) para processamento em memória de grandes volumes de dados abertos.</li>
+							<li><strong>UI/UX:</strong> Componentização customizada (ui.py) para manter a identidade visual e facilitar a manutenção dos elementos gráficos.</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>4. Diferenciais Técnicos</h3>
+						<ul class="stack-doc-list">
+							<li><strong>Multi-Page Architecture:</strong> Organização lógica que permite análises profundas sem sobrecarregar a interface do usuário.</li>
+							<li><strong>Data Discovery:</strong> Processo automatizado de identificação de padrões e outliers diretamente na ingestão dos dados.</li>
+							<li><strong>Performance:</strong> Cache de dados e otimização de consultas para garantir transições fluidas entre os dashboards.</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>5. Estrutura de Diretórios</h3>
+						<pre class="stack-doc-tree"><code>├── main_app.py         # Orquestrador do App
+├── pages/              # Módulos de Visões Estratégicas
+├── src/
+│   ├── connector.py    # Camada de Acesso aos Dados
+│   ├── discovery.py    # Lógica de Mineração de Insights
+│   └── profiling.py    # Estatísticas e Perfilamento
+└── data/               # Armazenamento de Datasets (Dados Abertos)</code></pre>
+					</section>
+				</div>
+			</article>
+
+			<article id="data-stack">
+				<h2 class="major">Stack | Data Engine</h2>
+				<div class="stack-doc">
+					<section class="stack-doc-section">
+						<h3>1. Visão Geral</h3>
+						<p>Motor de ETL e processamento de dados projetado para suportar o ecossistema GOVBR. O engine gerencia desde a ingestão de dados brutos até a criação de cubos analíticos e vetorização para IA, utilizando uma arquitetura escalável e resiliente.</p>
+					</section>
+					<section class="stack-doc-section">
+						<h3>2. Arquitetura de Dados (Medallion &amp; Pipelines)</h3>
+						<p>O processamento é dividido em camadas lógicas para garantir a qualidade do dado:</p>
+						<ul class="stack-doc-list">
+							<li><strong>Camada Bronze (csv_to_parquet.py):</strong> Ingestão e conversão de formatos brutos para Parquet (otimização de storage e leitura).</li>
+							<li><strong>Camada Silver (silver/):</strong> Limpeza, padronização de colunas e enriquecimento. Inclui tratamento de passagens, trechos e pagamentos.</li>
+							<li><strong>Camada Gold (gold/):</strong> Dados agregados e prontos para consumo, seguindo regras de negócio para auditoria e BI.</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>3. Módulos de Inteligência e Auditoria</h3>
+						<p>O grande diferencial desta engine é a preparação de dados para IA:</p>
+						<ul class="stack-doc-list">
+							<li><strong>Módulo RAG (audit/rag/):</strong> Pipeline de extração de features, geração de vetores e treinamento de IA para identificação de anomalias semânticas.</li>
+							<li><strong>Cubo de Auditoria (audit/bi/):</strong> Geração de agregados complexos (Rankings, KPIs e Detalhe de Alvos) para alimentar dashboards de alta performance.</li>
+							<li><strong>Supabase Integration:</strong> Sincronização automatizada de vetores e metadados com o Supabase (Vector Store).</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>4. Stack Tecnológica</h3>
+						<ul class="stack-doc-list">
+							<li><strong>Linguagem Core:</strong> Python 3.13.</li>
+							<li><strong>Performance:</strong> Processamento otimizado com foco em Lazy Evaluation e paralelismo (Rust/Polars via pipelines).</li>
+							<li><strong>Cloud &amp; Storage:</strong> Sincronização via Google Drive API (shared/drive_client.py) e exportação para Parquet.</li>
+							<li><strong>Qualidade:</strong> Contratos de schema rigorosos (check_gold_schema_contract.py) e logs detalhados de cada etapa do processo.</li>
+						</ul>
+					</section>
+					<section class="stack-doc-section">
+						<h3>5. Estrutura de Diretórios</h3>
+						<pre class="stack-doc-tree"><code>├── src/govbr_etl/
+│   ├── core/           # Camadas Medallion (Bronze, Silver, Gold)
+│   ├── modules/
+│   │   ├── audit/      # RAG, BI (Cubos) e IA Training
+│   │   └── pipeline/   # Padronização e Limpeza
+│   ├── shared/         # Clientes de API (Drive, Supabase) e Utils
+│   └── tools/          # Validação de Contratos de Dados e Amostragem
+├── logs/               # Rastreabilidade total do pipeline
+└── temp/               # Landing Zone organizada por Ano/Camada</code></pre>
+					</section>
+				</div>
+			</article>
+
+			<!-- Work -->
+			<article id="work">
+				<h2 id="work-title" class="major">Stack</h2>
+				<p id="work-subtitle">Organizadas por especialidade.</p>
+				<div class="stack-grid">
+					<section class="stack-group">
+						<h3>Engenharia de Dados</h3>
+						<ul class="stack-tags">
+							<li>Python</li>
+							<li>SQL</li>
+							<li>Rust</li>
+							<li>Polars</li>
+							<li>PySpark</li>
+							<li>PostgreSQL</li>
+						</ul>
+					</section>
+					<section class="stack-group">
+						<h3>Backend e APIs</h3>
+						<ul class="stack-tags">
+							<li>FastAPI</li>
+							<li>Node.js</li>
+							<li>REST APIs</li>
+							<li>SQL Server</li>
+							<li>Supabase</li>
+						</ul>
+					</section>
+					<section class="stack-group">
+						<h3>Cloud e Infra</h3>
+						<ul class="stack-tags">
+							<li>Azure</li>
+							<li>Docker</li>
+							<li>GitHub Actions</li>
+							<li>Linux</li>
+							<li>Vercel</li>
+						</ul>
+					</section>
+					<section class="stack-group">
+						<h3>IA Aplicada</h3>
+						<ul class="stack-tags">
+							<li>OpenAI API</li>
+							<li>Prompt Engineering</li>
+							<li>RAG</li>
+							<li>Automação de Fluxos</li>
+							<li>Streamlit</li>
+							<li>LLM Apps</li>
+						</ul>
+					</section>
+				</div>
+			</article>
+
+			<!-- About -->
+			<article id="about">
+				<h2 id="about-title" class="major">Soluções</h2>
+				<div class="about-grid">
+					<section class="about-card">
+						<h3>Arquitetura de Dados de Alta Performance</h3>
+						<p><strong>Desenvolvimento de arquiteturas de dados escaláveis e de alta eficiência</strong>,
+							cobrindo o ciclo completo de ingestão e processamento.</p>
+						<p><strong>Implantação de pipelines automatizados, dashboards dinâmicos e definição clara de
+								indicadores de negócio.</strong></p>
+					</section>
+					<section class="about-card">
+						<h3>Sistemas Robustos e Soluções de IA</h3>
+						<p><strong>Construção de backends e APIs críticas focadas em baixa latência</strong>, integrando
+							perfeitamente diferentes sistemas.</p>
+						<p><strong>Criação de soluções avançadas com inteligência artificial</strong> para automação e
+							suporte estratégico à decisão.</p>
+						<p><strong>Protótipos e produtos prontos para escala de produção.</strong></p>
+					</section>
+					<section class="about-card">
+						<h3>Metodologia Ágil e Qualidade de Software</h3>
+						<p><strong>Abordagem focada em entrega incremental</strong>, com ciclos rápidos de validação
+							contínua com o cliente.</p>
+						<p><strong>Adoção rigorosa de boas práticas</strong>, incluindo versionamento (Git), testes
+							automatizados e observabilidade total.</p>
+					</section>
+				</div>
+			</article>
+
+			<!-- Contact -->
+			<article id="contact">
+				<h2 id="contact-title" class="major">Contato</h2>
+				<div class="contact-panel">
+					<div class="contact-photo">
+						<img src="images/roger.jpg" alt="Foto de Rogério Oliveira" />
+					</div>
+					<div class="contact-details">
+						<p class="contact-email">
+							<span>Rogério Oliveira</span>
+						</p>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/sopaulorogerio" class="icon brands fa-linkedin-in"
+									target="_blank" rel="noopener noreferrer"><span class="label">LinkedIn</span></a>
+							</li>
+							<li><a href="https://wa.me/5511921127993" class="icon brands fa-whatsapp" target="_blank"
+									rel="noopener noreferrer"><span class="label">WhatsApp</span></a></li>
+							<li><a href="mailto:silva.paulorogerio@outlook.com" class="icon solid fa-envelope"><span
+										class="label">Email</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</article>
+
+			<!-- Elements -->
+			<article id="elements">
+				<h2 class="major">Elements</h2>
+
+				<section>
+					<h3 class="major">Text</h3>
+					<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is
+						<em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a
+							href="#">this is a link</a>.
+					</p>
+					<hr />
+					<h2>Heading Level 2</h2>
+					<h3>Heading Level 3</h3>
+					<h4>Heading Level 4</h4>
+					<h5>Heading Level 5</h5>
+					<h6>Heading Level 6</h6>
+					<hr />
+					<h4>Blockquote</h4>
+					<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus
+						euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis
+						iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem
+						ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					<h4>Preformatted</h4>
+					<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+    print 'Iteration ' + i;
+    deck.shuffle();
+    i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+				</section>
+
+				<section>
+					<h3 class="major">Lists</h3>
+
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+						<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value=""
+									placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message"
+									rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
+
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p id="footer-copy" class="copyright">&copy; 2026 Rogério Oliveira<br />Engenharia de dados e soluções
+				backend</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Modal for Demo Images -->
+	<div id="demo-modal" class="modal">
+		<div class="modal-content">
+			<button type="button" class="close" aria-label="Close">&times;</button>
+			<div class="modal-images">
+				<button type="button" class="demo-nav demo-prev" aria-label="Previous image">&#10094;</button>
+				<div class="demo-slide modal-image-slide active">
+					<img src="images/auditoria/cards.png" alt="Auditoria Image 1">
+				</div>
+				<div class="demo-slide modal-image-slide">
+					<img src="images/auditoria/home.png" alt="Auditoria Image 2">
+				</div>
+				<div class="demo-slide modal-image-slide">
+					<img src="images/auditoria/image.png" alt="Auditoria Image 3">
+				</div>
+				<div class="demo-slide modal-image-slide">
+					<img src="images/auditoria/modal.png" alt="Auditoria Image 4">
+				</div>
+				<button type="button" class="demo-nav demo-next" aria-label="Next image">&#10095;</button>
+			</div>
+			<div class="demo-indicator">
+				<span class="demo-current">1</span>/<span class="demo-total">4</span>
+			</div>
+		</div>
+	</div>
+
+	<div id="stack-modal" class="modal">
+		<div id="stack-modal-panel">
+			<button id="stack-modal-close" type="button" aria-label="Close">&times;</button>
+			<div id="stack-modal-body">
+				<div class="stack-modal-title">Documentação Técnica: SIAV (Sistema Inteligente de Auditoria de Viagens)</div>
+				<div class="stack-modal-section">
+					<div class="stack-modal-heading">1. Visão Geral</div>
+					<p>O SIAV é uma solução de auditoria de dados em larga escala que integra técnicas de Data Engineering com IA Generativa. O sistema automatiza a identificação de anomalias em gastos públicos, processando milhões de registros de viagens com foco em performance e precisão semântica.</p>
+				</div>
+				<div class="stack-modal-section">
+					<div class="stack-modal-heading">2. Arquitetura do Software (Clean Architecture)</div>
+					<p>O projeto segue princípios de Domain-Driven Design (DDD) para garantir manutenibilidade e separação de interesses:</p>
+					<ul>
+						<li><strong>app/core:</strong> Gestão de configurações globais, logging estruturado e ciclo de vida da aplicação (startup/settings).</li>
+						<li><strong>app/domain:</strong> Contém a lógica de negócio central (audit.py), independente de frameworks ou ferramentas externas.</li>
+						<li><strong>app/infrastructure:</strong> Camada de baixo nível que gerencia o motor de dados (data_engine.py), integrações com LLM (groq_client.py) e geração de vetores (embedding.py).</li>
+						<li><strong>app/services:</strong> Orquestra a comunicação entre a infraestrutura e o domínio, realizando o processamento das auditorias.</li>
+						<li><strong>app/routers &amp; app/schemas:</strong> API baseada em contratos rigorosos para comunicação com o frontend e validação de dados.</li>
+					</ul>
+				</div>
+				<div class="stack-modal-section">
+					<div class="stack-modal-heading">3. Stack Tecnológica &amp; Engenharia de Dados</div>
+					<ul>
+						<li><strong>Linguagem Core:</strong> Python 3.13 (foco em performance e concorrência).</li>
+						<li><strong>Data Engine:</strong> Processamento vetorial e tratamento de datasets massivos (+1M registros).</li>
+						<li><strong>IA e RAG:</strong> Embeddings para busca de similaridade e detecção de padrões não óbvios; LLMs via Groq para análise qualitativa de justificativas de viagem com ultra-baixa latência.</li>
+						<li><strong>Frontend Reativo:</strong> SPA (Single Page Application) em Vanilla JS com arquitetura de estado inspirada em Redux (store/reducer), garantindo fluidez no dashboard.</li>
+					</ul>
+				</div>
+				<div class="stack-modal-section">
+					<div class="stack-modal-heading">4. Diferenciais de Implementação</div>
+					<ul>
+						<li><strong>Lazy Evaluation:</strong> Otimização de memória no tratamento de dados para evitar gargalos em hardware limitado.</li>
+						<li><strong>Segurança e Logs:</strong> Middleware de auditoria para rastreabilidade de todas as ações realizadas no sistema.</li>
+						<li><strong>Modularidade:</strong> Substituição facilitada de componentes de infraestrutura sem afetar a lógica de negócio.</li>
+					</ul>
+				</div>
+				<div class="stack-modal-section">
+					<div class="stack-modal-heading">5. Estrutura de Diretórios</div>
+					<pre class="stack-modal-tree"><code>├── app
+│   ├── core           # Configurações e Startup
+│   ├── domain         # Entidades e Regras de Negócio
+│   ├── infrastructure # Clientes API, BD e Engine de Dados
+│   ├── services       # Orquestração de Auditoria
+│   └── routers        # Endpoints da API
+└── static             # Dashboard Frontend (Estado Centralizado)</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
